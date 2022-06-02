@@ -20,9 +20,7 @@ def solve(problems):
         
         args, ans = prob
         
-        
         print(f"{args=}")
-        
         print(f"Solving: {args}")
         print(f"Ans: {ans}")
         sol = solve_one(*args[1:], **args[0])
