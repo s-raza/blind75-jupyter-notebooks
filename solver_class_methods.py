@@ -1,8 +1,8 @@
 from typing import Tuple, List, Union
 
-def solve_one(cls, cmds: List[Tuple[str, Union[int, List]]]):
+def solve_one(cls, cmds: List[Tuple[str, Union[int, List]]], **kwargs):
     
-    q = cls()
+    q = cls(kwargs.get("init_kwargs"))
     res = []
     
     for cmd in cmds:
@@ -20,9 +20,12 @@ def solve(problems):
         
         args, ans = prob
         
+        
+        print(f"{args=}")
+        
         print(f"Solving: {args}")
         print(f"Ans: {ans}")
-        sol = solve_one(*args)
+        sol = solve_one(*args[1:], **args[0])
         print(f"Solution: {sol}")
         print(f"Success: {sol==ans}")
         print()
