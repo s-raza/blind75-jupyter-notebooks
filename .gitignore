@@ -129,5 +129,8 @@ Pipfile
 # csv
 *.csv
 
-# Test jupyter notebooks
+# Test jupyter notebook folder
 testnotebooks/
+
+# Test files
+test*
