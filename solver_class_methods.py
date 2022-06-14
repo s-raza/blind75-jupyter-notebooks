@@ -20,10 +20,12 @@ def solve(problems):
         
         args, ans = prob
         
-        print(f"{args=}")
-        print(f"Solving: {args}")
+        print(f"Solving: {args}\n")
         print(f"Ans: {ans}")
         sol = solve_one(*args[1:], **args[0])
-        print(f"Solution: {sol}")
-        print(f"Success: {sol==ans}")
+        print(f"Solution: {sol}\n")
+        out = f"Success: {sol==ans}"
+        print("="*len(out))
+        print(out)
+        print("="*len(out))
         print()
