@@ -110,7 +110,7 @@ venv.bak/
 .svn/
 
 # vscode
-.vscode/
+# .vscode/
 
 # Test folder
 #Tests/
